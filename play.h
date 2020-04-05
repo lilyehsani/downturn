@@ -21,3 +21,5 @@ void print_outcome(outcome o);
 turn change_turn(game* g);
 
 void play_game(game* g);
+
+#endif /* PLAY_H */
