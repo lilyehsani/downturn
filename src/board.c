@@ -9,6 +9,7 @@
 #include "../include/pos.h"
 #include "../include/board.h"
 
+
 /* num_ints: outputs the amount of ints necessary for an array of the
  * given amount of bits (calls) */
 unsigned int num_ints(unsigned int bits) {
@@ -63,7 +64,6 @@ board* board_new(unsigned int width, unsigned int height, enum type type) {
     return res;
 }
         
-
 void board_free(board* b) {
     if (b->type == MATRIX) {
         unsigned int i, rows = b->height;

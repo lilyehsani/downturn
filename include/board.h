@@ -16,7 +16,6 @@ enum cell {
 
 typedef enum cell cell;
 
-
 union board_rep {
     enum cell** matrix;
     unsigned int* bits;
@@ -27,7 +26,6 @@ typedef union board_rep board_rep;
 enum type {
     MATRIX, BITS
 };
-
 
 struct board {
     unsigned int width, height;

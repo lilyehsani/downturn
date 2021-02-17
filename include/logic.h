@@ -8,14 +8,12 @@
 
 #include "board.h"
 
-
 enum turn {
     BLACK_NEXT,
     WHITE_NEXT
 };
 
 typedef enum turn turn;
-
 
 enum outcome {
     BLACK_WIN,
@@ -26,13 +24,11 @@ enum outcome {
 
 typedef enum outcome outcome;
 
-
 enum direction {
     CW, CCW
 };
 
 typedef enum direction direction;
-
 
 struct game {
     unsigned int run;
