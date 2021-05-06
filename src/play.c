@@ -46,7 +46,6 @@ void print_goodbye()
 
 /* begin backend */
 
-/* do_turn: executes a single turn based on given game and user input */
 int do_turn(game* g) {
     /* assign place for input char */
     char ch;
@@ -102,7 +101,6 @@ int do_turn(game* g) {
     }
 }
 
-/* print_outcome: prints an outcome message given an outcome */
 void print_outcome(outcome o) {
     switch (o) {
         case BLACK_WIN:
@@ -123,7 +121,6 @@ void print_outcome(outcome o) {
     }
 }
 
-/* change_turn: changes the turn within the given game struct */
 turn change_turn(game* g) {
     if (g->next == BLACK_NEXT) {
         return WHITE_NEXT;
@@ -132,8 +129,6 @@ turn change_turn(game* g) {
     }
 }
 
-/* play_game: executes an entire game from start to finish given a
- * new game */
 void play_game(game* g) {
     print_welcome(); /* ASCII art and rules */
     printf("Get %d pieces in a row to win. Have fun!\n\n", g->run);
